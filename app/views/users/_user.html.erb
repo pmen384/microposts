@@ -1,4 +1,11 @@
-<li>
-  <%= user.name %>
-  <%= user.email %>
-</li>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="thumbnail">
+      <%= gravatar_for user %>
+      <div class="caption">
+        <p><span class="label label-primary mr5 ml10">名前</span><%= link_to user.name, user_path(user) %></p>
+        <p><span class="label label-warning mr5 ml10">E-MAIL</span><%= user.email %></p>
+      </div>
+    </div>
+  </div>
+</div>
