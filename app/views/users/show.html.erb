@@ -5,6 +5,12 @@
         <%= gravatar_for @user %>
         <%= @user.name %>
       </h1>
+      <%= link_to "followers", user_followers_path(@user)%>
+      <%= link_to "following", user_followings_path(@user)%>
+      <ul style="list-style:none;">
+        <li><span class="label label-default">E-Mail</span> <%= @user.email %></li>
+        <li><span class="label label-default">Place</span> <%= @user.location %></li>
+      </ul>
     </section>
   </aside>
   <div class="col-md-8">
