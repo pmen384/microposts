@@ -47,3 +47,6 @@ group :development do
 end
 
 gem 'kaminari'
+gem 'therubyracer'
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
